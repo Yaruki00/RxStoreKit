@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,26 +12,9 @@
 		D6FEE72823AA405B000B8DA9 /* StoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEE72423AA405B000B8DA9 /* StoreError.swift */; };
 		D6FEE72923AA405B000B8DA9 /* StoreUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEE72523AA405B000B8DA9 /* StoreUseCase.swift */; };
 		D6FEE72A23AA405B000B8DA9 /* StoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEE72623AA405B000B8DA9 /* StoreHelper.swift */; };
-		D6FEE72D23AB0630000B8DA9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEE72C23AB0630000B8DA9 /* RxSwift.framework */; platformFilter = ios; };
-		D6FEE72E23AB0630000B8DA9 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEE72C23AB0630000B8DA9 /* RxSwift.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D6FEE73123AB064C000B8DA9 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEE73023AB064C000B8DA9 /* RxCocoa.framework */; platformFilter = ios; };
-		D6FEE73223AB064C000B8DA9 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEE73023AB064C000B8DA9 /* RxCocoa.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6FEE72D23AB0630000B8DA9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEE72C23AB0630000B8DA9 /* RxSwift.framework */; };
+		D6FEE73123AB064C000B8DA9 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FEE73023AB064C000B8DA9 /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D6FEE72F23AB0630000B8DA9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D6FEE73223AB064C000B8DA9 /* RxCocoa.framework in Embed Frameworks */,
-				D6FEE72E23AB0630000B8DA9 /* RxSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D6FEE71823AA3F71000B8DA9 /* RxStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +102,6 @@
 				D6FEE71423AA3F71000B8DA9 /* Sources */,
 				D6FEE71523AA3F71000B8DA9 /* Frameworks */,
 				D6FEE71623AA3F71000B8DA9 /* Resources */,
-				D6FEE72F23AB0630000B8DA9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,7 +312,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 0.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuta-kawabe.RxStoreKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -362,7 +344,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 0.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuta-kawabe.RxStoreKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
