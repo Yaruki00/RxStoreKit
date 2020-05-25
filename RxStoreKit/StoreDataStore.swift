@@ -84,6 +84,10 @@ final class StoreDataStoreImpl: NSObject, StoreDataStore {
         SKPaymentQueue.default().add(self)
     }
     
+    deinit {
+        SKPaymentQueue.default().remove(self)
+    }
+    
     // MARK: - func
     
     func fetchProducts(productIds: [String]) {
